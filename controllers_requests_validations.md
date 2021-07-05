@@ -26,6 +26,8 @@ public function test(Request $request){
 [Validation Rules](https://laravel.com/docs/8.x/validation#available-validation-rules)
 
     use  Illuminate\Http\Request;
+    use Illuminate\Support\Facades\Auth;
+    
     $validated = $request->validate([
     'email'  =>  'required|exists:user',    
     'password'  =>  'required'    
